@@ -7,16 +7,29 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0b0c10;
-            color: #c5c6c7;
+            background-color: #201c3c;
+            color: #ffffff;
             margin: 0;
+        }
+
+        .top-banner {
+            width: 100%;
+            background-color: #2a264d;
+            text-align: center;
+        }
+
+        .top-banner img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
         }
 
         header {
             display: flex;
             align-items: center;
             padding: 10px 20px;
-            background-color: #1f2833;
+            background-color: #2a264d;
             flex-wrap: wrap;
         }
 
@@ -25,29 +38,24 @@
             margin-right: 20px;
         }
 
-        header img.banner {
-            flex-grow: 1;
-            height: 80px;
-            object-fit: contain;
-        }
-
         nav {
-            background-color: #45a29e;
+            background-color: #2a264d;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         nav a {
-            color: white;
+            color: #ffffff;
             padding: 14px 20px;
             text-decoration: none;
             font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         nav a:hover {
             background-color: #66fcf1;
-            color: #0b0c10;
+            color: #201c3c;
         }
 
         section {
@@ -57,7 +65,7 @@
         }
 
         footer {
-            background-color: #1f2833;
+            background-color: #2a264d;
             color: #66fcf1;
             text-align: center;
             padding: 20px;
@@ -72,20 +80,30 @@
 
         .social-links a:hover {
             text-decoration: underline;
+            color: #a0f7f2;
         }
 
-        h2 {
+        h2, h3 {
             color: #66fcf1;
+        }
+
+        a {
+            color: #66fcf1;
+        }
+
+        a:hover {
+            color: #a0f7f2;
         }
     </style>
 </head>
 <body>
 
+<div class="top-banner">
+    <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/banniere-alcor.png" alt="Bannière de l'association ALCOR" />
+</div>
+
 <header>
-    <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/logo-alcor.png"
-         alt="Logo ALCOR" class="logo" />
-    <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/banniere-alcor.png"
-         alt="Bannière de l'association ALCOR" class="banner" />
+    <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/logo-alcor.png" alt="Logo ALCOR" class="logo" />
 </header>
 
 <nav>
@@ -104,18 +122,7 @@
 
 <section id="evenements">
     <h2>Événements à venir</h2>
-
-    <div class="event">
-        <h3>🌠 Nuit des Étoiles</h3>
-        <p>📅 16 août 2025 | 📍 Observatoire d’Orsay</p>
-        <p>Soirée d'observation ouverte à tous avec télescopes, discussions et animations autour du ciel nocturne.</p>
-    </div>
-
-    <div class="event">
-        <h3>📷 Atelier d’astrophotographie</h3>
-        <p>📅 22 septembre 2025 | 📍 Bâtiment 470 – Salle TP</p>
-        <p>Découvrez les bases de la photographie du ciel avec notre équipe !</p>
-    </div>
+    <p>Il n’y a actuellement aucun événement à venir. Revenez bientôt pour découvrir nos prochaines activités !</p>
 </section>
 
 <section id="galerie">
@@ -126,7 +133,7 @@
 <section id="contact">
     <h2>Contact & Réseaux</h2>
 
-    <p>📧 Email : <a href="mailto:alcor.asso@gmail.com" style="color: #66fcf1;">alcor.asso@gmail.com</a></p>
+    <p>📧 Email : <a href="mailto:alcor.asso@gmail.com">alcor.asso@gmail.com</a></p>
 
     <p>📍 <strong>Lieu d’activité :</strong><br>
        Bâtiment HBAR 625, Université Paris‑Saclay – Campus d’Orsay
