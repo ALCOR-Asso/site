@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Association ALCOR - Astronomie Paris-Saclay</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <title>ALCOR - Astronomie et Lumières du Campus d'Orsay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,47 +11,81 @@
             color: #c5c6c7;
             margin: 0;
         }
+
         header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
             background-color: #1f2833;
-            padding: 20px;
-            text-align: center;
+            flex-wrap: wrap;
         }
-        header h1 {
-            color: #66fcf1;
+
+        header img.logo {
+            height: 80px;
+            margin-right: 20px;
         }
+
+        header img.banner {
+            flex-grow: 1;
+            height: 80px;
+            object-fit: contain;
+        }
+
         nav {
             background-color: #45a29e;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
+
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
+            font-weight: bold;
         }
+
         nav a:hover {
             background-color: #66fcf1;
             color: #0b0c10;
         }
+
         section {
             padding: 40px;
+            max-width: 1000px;
+            margin: auto;
         }
-        .event, .contact, .gallery {
-            margin-bottom: 30px;
-        }
+
         footer {
             background-color: #1f2833;
             color: #66fcf1;
             text-align: center;
             padding: 20px;
         }
+
+        .social-links a {
+            display: inline-block;
+            margin: 8px;
+            color: #66fcf1;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #66fcf1;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Association ALCOR</h1>
-    <p>Astronomie à Paris-Saclay</p>
+    <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/logo-alcor.png"
+         alt="Logo ALCOR" class="logo" />
+    <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/banniere-alcor.png"
+         alt="Bannière de l'association ALCOR" class="banner" />
 </header>
 
 <nav>
@@ -63,37 +97,60 @@
 
 <section id="presentation">
     <h2>Présentation</h2>
-    <p>L'association ALCOR propose des activités autour de l'astronomie pour les étudiants et passionnés de l'Université Paris-Saclay. Observations, ateliers, conférences et plus encore vous attendent.</p>
+    <p>Bonjour ! Nous sommes <strong>ALCOR</strong>, l'association d'<strong>Astronomie et Lumières du Campus d'Orsay</strong> (Université Paris-Saclay).</p>
+    <p>Nous organisons des observations, des ateliers d’astrophotographie, des conférences, et des soirées pour tous les passionnés du ciel.</p>
+    <p>Venez faire un tour sur nos réseaux pour suivre nos activités et participer aux prochaines observations !</p>
 </section>
 
 <section id="evenements">
     <h2>Événements à venir</h2>
+
     <div class="event">
-        <h3>Nuit des Étoiles</h3>
+        <h3>🌠 Nuit des Étoiles</h3>
         <p>📅 16 août 2025 | 📍 Observatoire d’Orsay</p>
-        <p>Soirée d'observation ouverte au public avec animations, télescopes et explications par nos membres.</p>
+        <p>Soirée d'observation ouverte à tous avec télescopes, discussions et animations autour du ciel nocturne.</p>
     </div>
+
     <div class="event">
-        <h3>Atelier photo céleste</h3>
-        <p>📅 22 septembre 2025 | 📍 Salle TP Bâtiment 470</p>
-        <p>Initiez-vous à l'astrophotographie avec nos bénévoles !</p>
+        <h3>📷 Atelier d’astrophotographie</h3>
+        <p>📅 22 septembre 2025 | 📍 Bâtiment 470 – Salle TP</p>
+        <p>Découvrez les bases de la photographie du ciel avec notre équipe !</p>
     </div>
 </section>
 
 <section id="galerie">
     <h2>Galerie</h2>
-    <p>🌌 Bientôt disponible : une sélection de nos plus belles photos du ciel.</p>
+    <p>🌌 Bientôt disponible : une sélection de nos plus belles photos du ciel nocturne prises par nos membres.</p>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 Email : contact@alcor.asso.fr</p>
-    <p>📍 Campus Université Paris-Saclay – Bâtiment d’Astronomie</p>
-    <p>Suivez-nous sur <a href="#" style="color: #66fcf1;">Facebook</a> ou <a href="#" style="color: #66fcf1;">Instagram</a></p>
+    <h2>Contact & Réseaux</h2>
+
+    <p>📧 Email : <a href="mailto:alcor.asso@gmail.com" style="color: #66fcf1;">alcor.asso@gmail.com</a></p>
+
+    <p>📍 <strong>Lieu d’activité :</strong><br>
+       Bâtiment HBAR 625, Université Paris‑Saclay – Campus d’Orsay
+    </p>
+
+    <p>🏢 <strong>Siège social :</strong><br>
+       Université Paris‑Saclay<br>
+       Bâtiment 625, 1er étage, Bureau 120<br>
+       91405 ORSAY CEDEX
+    </p>
+
+    <div class="social-links">
+        <h3>Suivez-nous :</h3>
+        <a href="https://www.instagram.com/alcor_asso/" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+        <a href="https://discord.gg/RStKnwx8mc" target="_blank" rel="noopener noreferrer">💬 Discord</a>
+        <a href="https://chat.whatsapp.com/EeL3pPSLVFi3LKWKiPXajm" target="_blank" rel="noopener noreferrer">📱 WhatsApp</a>
+        <a href="https://twitter.com/AssoALCOR" target="_blank" rel="noopener noreferrer">🐦 Twitter (X)</a>
+        <a href="https://www.facebook.com/ALCOR.asso" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+        <a href="https://www.youtube.com/@ALCOR-asso" target="_blank" rel="noopener noreferrer">📺 YouTube</a>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Association ALCOR - Astronomie Paris-Saclay</p>
+    <p>&copy; 2025 Association ALCOR - Astronomie et Lumières du Campus d'Orsay</p>
 </footer>
 
 </body>
