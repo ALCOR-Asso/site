@@ -50,7 +50,7 @@
         }
 
         nav a:hover {
-            background-color: #66fcf1;
+            background-color: #ffffff;
             color: #201c3c;
         }
 
@@ -78,6 +78,23 @@
             text-decoration: underline;
             color: #66fcf1;
         }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 560px;
+            padding-bottom: 56.25%; /* ratio 16:9 */
+            height: 0;
+            margin: 20px auto; /* centre la vidéo */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
 
         h2, h3 {
             color: #201c3c;
