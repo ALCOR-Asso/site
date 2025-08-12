@@ -68,23 +68,22 @@
         }
 
         .social-links a {
-            display: inline-block;
-            margin: 8px;
-            color: #201c3c;
             text-decoration: none;
+            color: #201c3c;
         }
 
         .social-links a:hover {
-            text-decoration: underline;
             color: #66fcf1;
+            text-decoration: underline;
         }
+
         .video-container {
             position: relative;
             width: 100%;
             max-width: 100%;
-            padding-bottom: 56.25%; /* ratio 16:9 */
+            padding-bottom: 56.25%;
             height: 0;
-            margin: 20px auto; /* centre la vidéo */
+            margin: 20px auto;
         }
 
         .video-container iframe {
@@ -94,7 +93,6 @@
             width: 100%;
             height: 100%;
         }
-
 
         h2, h3 {
             color: #201c3c;
@@ -107,6 +105,32 @@
         a:hover {
             color: #66fcf1;
         }
+
+        .cta-button {
+            background-color: #201c3c;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #66fcf1;
+            color: #201c3c;
+        }
+
+        .social-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .social-links li {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -115,37 +139,34 @@
     <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/banniere-alcor.png" alt="Bannière de l'association ALCOR" />
 </div>
 
-<header>
-    <!-- Logo supprimé, déjà présent dans la bannière -->
-</header>
+<header></header>
 
 <nav>
     <a href="#presentation">Présentation</a>
     <a href="#evenements">Événements</a>
     <a href="#galerie">Galerie</a>
     <a href="#contact">Contact</a>
+    <a href="#inscription">Inscription</a>
 </nav>
 
+<!-- Présentation -->
 <section id="presentation">
     <h2>Présentation</h2>
-    
     <h1>ALCOR - Astronomie et Lumières du Campus d’Orsay</h1>
-    
     <div class="container">
-        <h1>ALCOR - Astronomie et Lumières du Campus d’Orsay</h1>
         <p>
-            <strong>ALCOR</strong> (Astronomie et Lumières du Campus d’ORsay) est une association ouverte à tous, 
-            regroupant principalement des étudiants venus de différents horizons. 
+            <strong>ALCOR</strong> (Astronomie et Lumières du Campus d’ORsay) est une association ouverte à tous,
+            regroupant principalement des étudiants venus de différents horizons.
             Elle propose des activités ayant pour objectif la <strong>diffusion populaire de l’astronomie</strong> auprès de tous ceux qui s’y intéressent.
         </p>
         <p>
-            Située sur le campus d’Orsay de l’Université Paris-Sud, ALCOR propose de nombreuses activités en lien avec l’astronomie :
+            Située sur le campus d’Orsay de l’Université Paris-Sud, ALCOR propose de nombreuses activités :
         </p>
         <ul>
-            <li>Des <strong>observations astronomiques</strong> (notamment sous la superbe coupole du bâtiment 625)</li>
-            <li>Des <strong>conférences</strong></li>
-            <li>Des <strong>sorties</strong></li>
-            <li>Des <strong>conversations passionnées</strong></li>
+            <li><strong>Observations astronomiques</strong> (notamment sous la superbe coupole du bâtiment 625)</li>
+            <li><strong>Conférences</strong></li>
+            <li><strong>Sorties</strong></li>
+            <li><strong>Conversations passionnées</strong></li>
             <li>Et bien d'autres !</li>
         </ul>
         <p>
@@ -153,17 +174,69 @@
         </p>
     </div>
 
+    <!-- Vidéo YouTube intégrée -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/e-jWw9eUHHY"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Réseaux sociaux -->
     <div class="social-links">
-        <h3>Suivez-nous :</h3>
-        <a href="https://www.instagram.com/alcor_asso/" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
-        <a href="https://discord.gg/RStKnwx8mc" target="_blank" rel="noopener noreferrer">💬 Discord</a>
-        <a href="https://chat.whatsapp.com/EeL3pPSLVFi3LKWKiPXajm" target="_blank" rel="noopener noreferrer">📱 WhatsApp</a>
-        <a href="https://twitter.com/AssoALCOR" target="_blank" rel="noopener noreferrer">🐦 Twitter (X)</a>
-        <a href="https://www.facebook.com/ALCOR.asso" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
-        <a href="https://www.youtube.com/@ALCOR-asso" target="_blank" rel="noopener noreferrer">📺 YouTube</a>
+        <h3>Suivez-nous sur les réseaux :</h3>
+        <ul>
+            <li>📸 <a href="https://www.instagram.com/alcor_asso/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li>💬 <a href="https://discord.gg/RStKnwx8mc" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li>📱 <a href="https://chat.whatsapp.com/EeL3pPSLVFi3LKWKiPXajm" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li>🐦 <a href="https://twitter.com/AssoALCOR" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+            <li>📘 <a href="https://www.facebook.com/ALCOR.asso" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li>📺 <a href="https://www.youtube.com/@ALCOR-asso" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        </ul>
     </div>
 </section>
 
+<!-- Événements -->
+<section id="evenements">
+    <h2>Événements</h2>
+    <p>📅 Retrouve ici nos événements à venir : soirées d’observation, conférences, sorties et plus encore !</p>
+    
+</section>
+
+<!-- Galerie -->
+<section id="galerie">
+    <h2>Galerie</h2>
+    <p>🖼️ Quelques souvenirs de nos activités à venir ici. Bientôt disponible !</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>📬 Une question, une idée ou envie de collaborer ?</p>
+    <p>📧 <strong>Email</strong> : <a href="mailto:alcor.asso@gmail.com">alcor.asso@gmail.com</a></p>
+    <p>🏢 <strong>Siège social</strong> : Université Paris-Saclay<br>
+       Bâtiment 625, 1er étage, Bureau 120<br>
+       91405 ORSAY CEDEX</p>
+    <p>🔭 <strong>Lieu d’activité</strong> : Bâtiment Hbar 625, Université Paris-Saclay</p>
+</section>
+
+<!-- Inscription -->
+<section id="inscription">
+    <h2>Inscription</h2>
+    <p>
+        Tu veux nous rejoindre et participer à nos activités d'astronomie ? Rien de plus simple !
+        Clique sur le bouton ci-dessous pour remplir le formulaire d'inscription.
+    </p>
+    <p style="text-align: center;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDOPzw3JkKFSFcXYQ8ptt1P8SzUd2noCJFY6M3J5lDYOt9hA/viewform?usp=dialog"
+           class="cta-button" target="_blank" rel="noopener noreferrer">
+            ✍️ S'inscrire à ALCOR
+        </a>
+    </p>
+</section>
+
+<!-- Pied de page -->
 <footer>
     <p>&copy; 2025 Association ALCOR - Astronomie et Lumières du Campus d'Orsay</p>
 </footer>
