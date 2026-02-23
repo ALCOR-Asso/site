@@ -1,325 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <title>ALCOR - Astronomie et Lumières du Campus d'Orsay</title>
     <link rel="icon" href="https://raw.githubusercontent.com/ALCOR-Asso/site/main/Logo-32x32.png" type="image/png">
+    <link href="styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Bastien SIEGLER">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #201c3c;
-            margin: 0;
-        }
-
-        .top-banner {
-            width: 100%;
-            text-align: center;
-            background-color: transparent;
-        }
-
-        .top-banner img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: transparent;
-        }
-
-        nav {
-            background-color: #201c3c;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: #ffffff;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #ffffff;
-            color: #201c3c;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        footer {
-            background-color: #201c3c;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .social-links a {
-            text-decoration: none;
-            color: #201c3c;
-        }
-
-        .social-links a:hover {
-            color: #66fcf1;
-            text-decoration: underline;
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 100%;
-            padding-bottom: 56.25%;
-            height: 0;
-            margin: 20px auto;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        h2, h3 {
-            color: #201c3c;
-        }
-
-        a {
-            color: #201c3c;
-        }
-
-        a:hover {
-            color: #66fcf1;
-        }
-
-        .cta-button {
-            background-color: #201c3c;
-            color: #ffffff;
-            padding: 12px 24px;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: bold;
-            border-radius: 6px;
-            display: inline-block;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #66fcf1;
-            color: #201c3c;
-        }
-
-        .social-links ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .social-links li {
-            margin: 5px 0;
-        }
-    </style>
 </head>
+
 <body>
 
-<div class="top-banner">
-    <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/banniere-alcor.png" alt="Bannière de l'association ALCOR" />
-</div>
-
-<header></header>
-
-<nav>
-    <a href="#presentation">Présentation</a>
-    <a href="#evenements">Événements</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="#inscription">Inscription</a>
-</nav>
-
-<!-- Présentation -->
-<section id="presentation">
-    <h2>Présentation</h2>
-    <h1>ALCOR - Astronomie et Lumières du Campus d’Orsay</h1>
-    <div class="container">
-        <p>
-            <strong>ALCOR</strong> (Astronomie et Lumières du Campus d’ORsay) est une association ouverte à tous,
-            regroupant principalement des étudiants venus de différents horizons.
-            Elle propose des activités ayant pour objectif la <strong>diffusion populaire de l’astronomie</strong> auprès de tous ceux qui s’y intéressent.
-        </p>
-        <p>
-            Située sur le campus d’Orsay de l’Université Paris-Sud, ALCOR propose de nombreuses activités :
-        </p>
-        <ul>
-            <li><strong>Observations astronomiques</strong> (notamment sous la superbe coupole du bâtiment 625)</li>
-            <li><strong>Conférences</strong></li>
-            <li><strong>Sorties</strong></li>
-            <li><strong>Conversations passionnées</strong></li>
-            <li>Et bien d'autres !</li>
-        </ul>
-        <p>
-            Nous sommes <strong>ouverts à toutes et tous</strong>, alors n’hésitez pas à nous rejoindre !
-        </p>
+    <div class="top-banner">
+        <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/banniere-alcor.png"
+            alt="Bannière de l'association ALCOR" />
     </div>
 
-    <!-- Vidéo YouTube intégrée -->
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/e-jWw9eUHHY"
-                frameborder="0"
+    <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#evenements">Événements</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+        <a href="#inscription">Inscription</a>
+        <a href="biblio/index.html">Bibliothèque</a>
+    </nav>
+
+    <!-- Présentation -->
+    <section id="presentation">
+        <h2>Présentation</h2>
+        <h1>ALCOR - Astronomie et Lumières du Campus d’Orsay</h1>
+        <div class="container">
+            <p>
+                <strong>ALCOR</strong> (Astronomie et Lumières du Campus d’ORsay) est une association ouverte à tous,
+                regroupant principalement des étudiants venus de différents horizons.
+                Elle propose des activités ayant pour objectif la <strong>diffusion populaire de l’astronomie</strong>
+                auprès de tous ceux qui s’y intéressent.
+            </p>
+            <p>
+                Située sur le campus d’Orsay de l’Université Paris-Sud, ALCOR propose de nombreuses activités :
+            </p>
+            <ul>
+                <li><strong>Observations astronomiques</strong> (notamment sous la superbe coupole du bâtiment 625)</li>
+                <li><strong>Conférences</strong></li>
+                <li><strong>Sorties</strong></li>
+                <li><strong>Conversations passionnées</strong></li>
+                <li>Et bien d'autres !</li>
+            </ul>
+            <p>
+                Nous sommes <strong>ouverts à toutes et tous</strong>, alors n’hésitez pas à nous rejoindre !
+            </p>
+        </div>
+
+        <!-- Vidéo YouTube intégrée -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/e-jWw9eUHHY?autoplay=1" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
-        </iframe>
-    </div>
+            </iframe>
+        </div>
 
-    <!-- Réseaux sociaux -->
-    <div class="social-links">
-        <h3>Suivez-nous sur les réseaux :</h3>
+        <!-- Réseaux sociaux -->
+        <div class="social-links">
+            <h3>Suivez-nous sur les réseaux :</h3>
+            <ul>
+                <li>📸 <a href="https://www.instagram.com/alcor_asso/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li>💬 <a href="https://discord.gg/RStKnwx8mc" target="_blank" rel="noopener noreferrer">Discord</a>
+                </li>
+                <li>📱 <a href="https://chat.whatsapp.com/EeL3pPSLVFi3LKWKiPXajm" target="_blank"
+                        rel="noopener noreferrer">WhatsApp</a></li>
+                <li>🐦 <a href="https://twitter.com/AssoALCOR" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+                </li>
+                <li>📘 <a href="https://www.facebook.com/ALCOR.asso" target="_blank"
+                        rel="noopener noreferrer">Facebook</a></li>
+                <li>📺 <a href="https://www.youtube.com/@ALCOR-asso" target="_blank"
+                        rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Événements -->
+    <section id="evenements">
+        <h2>Événements</h2>
+        <p>📅 Retrouve ici nos événements à venir : soirées d’observation, conférences, sorties et plus encore !</p>
+
         <ul>
-            <li>📸 <a href="https://www.instagram.com/alcor_asso/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li>💬 <a href="https://discord.gg/RStKnwx8mc" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li>📱 <a href="https://chat.whatsapp.com/EeL3pPSLVFi3LKWKiPXajm" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-            <li>🐦 <a href="https://twitter.com/AssoALCOR" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
-            <li>📘 <a href="https://www.facebook.com/ALCOR.asso" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li>📺 <a href="https://www.youtube.com/@ALCOR-asso" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+
+            <li><strong>Milieux interstellaires et les trous noirs massifs : une quête (extra)galactique</strong> – <em>le 24 février 2026 à 19h</em> au Hbar (bat 625) :<br>
+                Une conférence conviviale et captivante présentée par Maxime Varese, suivie d'un goûter !
+            </li>
+            <li> Le retour du <strong>WAO</strong>, sping edition : <em>les 18-19 avril 2026</em> à l'Aubette
+            </li>
+            <li> Une conférence de <strong>Roland Lehoucq</strong> – <em>septembre 2026</em>
+            </li>
         </ul>
-    </div>
-</section>
+    </section>
 
-<!-- Événements -->
-<section id="evenements">
-    <h2>Événements</h2>
-    <p>📅 Retrouve ici nos événements à venir : soirées d’observation, conférences, sorties et plus encore !</p>
-    
-    <ul>
-        
-        <li><strong>Village de la Science</strong> – <em>du 3 au 6 octobre 2025</em> à l’ENS Paris-Saclay :<br>
-            ALCOR tiendra des stands et animera des ateliers pour faire découvrir l’astronomie à tous.
-        </li>
-        <li><strong>La Brève Histoire de ma Thèse</strong> – <em>11 octobre 2025</em> :<br>
-            Une après-midi conviviale où des doctorants en physique présentent leur thèse de façon accessible, le tout accompagné d’un goûter.
-            Trous noirs, télescopes,  catastrophes naturelles.... :   
-            l'association Astronomie et Lumière du Campus d'Orsay - ALCOR - vous invite à découvrir les recherches de 6 doctorant.e.s.  
-            Les conférences sont ouvertes à toutes et tous, même aux néophytes. 
-            Rendez-vous le samedi 11 octobre dans l'amphithéâtre F2 du bâtiment 452 à partir de 13 heures 30 (RER B Orsay-Ville).
+    <!-- Galerie -->
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="img-galerie">
+            <img src="lune.jpg" title="photo empilée de la Lune au c14" />
+            <img src="jupiter.jpg" title="photo empilée de Jupiter au c14" />
+        </div>
+        <p>🖼️ Quelques souvenirs de nos activités précédentes. Plus à venir !</p>
+    </section>
 
-            Plus d'infos <a href="#breve_these">ici !</a>
-        </li>
-        <li><strong>Sunday - Le Soleil</strong> – <em>28 septembre 2025</em> :<br>
-            Une après-midi à thème autour du Soleil, avec deux conférences et une pièce de théâtre scientifique.
-        </li>
-        <li><strong>WAO - Week-end d'Astronomie et d'Observation</strong> – <em>du 24 au 27 octobre 2025</em>, lieu : <strong>Aubette</strong> :<br>
-            Un week-end d’observations astronomiques et d’activités en pleine nature, organisé par ALCOR.
-        </li>
-    </ul>
-</section>
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📬 Une question, une idée ou envie de collaborer ?</p>
+        <p>📧 <strong>Email</strong> : <a href="mailto:alcor.asso@gmail.com">alcor.asso@gmail.com</a></p>
+        <p>🏢 <strong>Siège social</strong> : Université Paris-Saclay<br>
+            Bâtiment 625, 1er étage, Bureau 120<br>
+            91405 ORSAY CEDEX</p>
+        <p>🔭 <strong>Lieu d’activité</strong> : Bâtiment Hbar 625, Université Paris-Saclay</p>
+    </section>
 
-<section id="breve_these">
-    <h1> Une brève histoire de ma thèse est de retour !</h1>
+    <!-- Inscription -->
+    <section id="inscription">
+        <h2>Inscription</h2>
+        <p>
+            Tu veux nous rejoindre et participer à nos activités d'astronomie ? Rien de plus simple !
+            Clique sur le bouton ci-dessous pour remplir le formulaire d'inscription.
+        </p>
+        <p style="text-align: center;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDOPzw3JkKFSFcXYQ8ptt1P8SzUd2noCJFY6M3J5lDYOt9hA/viewform?usp=dialog"
+                class="cta-button" target="_blank" rel="noopener noreferrer">
+                ✍️ S'inscrire à ALCOR
+            </a>
+        </p>
+    </section>
 
-    <br> 
-    
-    Une brève histoire de ma thèse est de retour pour l'année 2025 ! On vous donne rendez-vous au <strong> bâtiment 452, amphithéâtre F2 le 11 octobre à partir de 13h30 ! </strong> Voici un détail du programme:
-
-    <br>
-    
-    <li> <strong> 14h00 - La météorologie de l'espace, ou comment l'astrophysique peut vous aider à chasser les aurores boréales </strong> - <em> Barbara Perri (CEA/dap) </em> 
-        Qui a dit que l'astrophysique ne se pratiquait que la nuit ? Nous allons ici parler de la plus célèbre des étoiles, à savoir le Soleil, et de sa relation toute particulière avec notre planète. 
-        En effet, là oùbeaucoup de travaux en astrophysique sont purement théoriques, la météorologie de l'espace permet d'anticiper l'impact des sursauts énergétiques de notre astre sur nos sociétés technologiques. Nous
-        allons ainsi voir quels sont les phénomènes à surveiller sur le Soleil, depuis leur origine physique jusqu'à leur propagation vers la Terre. Nous discuterons également des solutions mises en place 
-        pour les prédire, depuis les observations du Soleil jusqu'à sa modélisation. Enfin, nous terminerons avec un petit cas pratique avec la plus belle manifestation sur Terre de l'activité solaire :
-        l'observation des aurores boréales, et comment anticiper la prochaine fois qu'elles seront visibles en France ! </li>
-    <br>
-    <li> <strong> 14h30 - Exploration du vide quantique</strong> - <em> Soig Turban (LULI – X) </em> </li>
-    <br>
-    <li> <strong> 15h - Le plus élémentaire des jeux de piste : la recherche du boson de Higgs ! </strong> - <em> Ruth Amella Ranz & Ines Combes (LLR/IJCLab) </em> 
-        Vous êtes imbattables au cache-cache ? C’est parce que vous n’avez jamais affronté le boson de
-        Higgs… Préparez vos neurones pour une épopée fascinante dans le monde des particules élémentaires !
-        Venez percer les mystères du boson de Higgs en embarquant à bord des deux expériences qui l’ont
-        découvert, ATLAS et CMS, grâce à un immense collisionneur de particules, le LHC.
-        Attachez votre ceinture, et le boson de Higgs n’aura plus de secret pour vous ! Enfin, presque... </li>
-    <br>
-    <li> <strong> 16h15 - Trous Noirs en gravité modifiée</strong> - <em>Hugo Candan(Obs Paris-LUX/IJCLab) </em> 
-        La recherche de théories alternatives de la gravité est motivée par plusieurs considérations, telles
-que l’énergie noire ou l’existence de singularités dans la relativité générale. Une sous-classe
-générale des théories modifiées de la gravité sont les théories scalaire-tenseur, qui ont été
-développées au cours des dernières décennies. Il est particulièrement intéressant de rechercher des
-observables susceptibles de contraindre ces théories. Les trous noirs sont des objets possédant un
-champ gravitationnel extrême, ce qui les rend très adaptés à la mise à l’épreuve des théories de la
-gravité, et c’est pourquoi ils sont au cœur de ce travail. Avec l’avènement de détecteurs de haute
-précision tels que LISA ou l’Einstein Telescope, nous disposerons des instruments d’observation
-nécessaires pour déterminer si les trous noirs réels sont compatibles avec la relativité générale, ou
-avec celles des théories alternatives. </li>
-    <br>
-    <li> <strong> 16h45 - Est ce qu’un télescope à 10 milliards vaut le coup ? </strong> - <em>Valentina Sangalli - Jean-Baptiste Billand (CEA/Dap) </em> 
-        La physique des galaxies a débutée au 20 siècle et a connue de nombreuses révolutions grace à
-des outils de plus en plus performants. Aujourd’hui nous présentons les avancées du telescope
-James Webb (JWST) dans le domaine de la physique des galaxies, les structures parmi les plus
-importantes/massives se formant dans l’univers. Nous aborderons les galaxies primordiales et
-leurs propriétés (Valentina), ainsi que des galaxies découvertes récemment (2022) et toujours
-incomprises à ce jour, les Little Red Dots (LRDs) (JB). </li>
-    <br>
-    <li> <strong> 17h30 - Physique des catastrophes naturelles : Glissement de terrains et
-tsunamis</strong> - <em>Igor Le-Pivert-Jolivet (FAST)</em> 
-        Pour le plus grand nombre les tsunamis sont générés par des séismes, comme ce fut le cas en mars
-2011 au large des côtes japonaises. Mais l'écoulement d'une masse rocheuse, d'une avalanche ou
-d'une coulée pyroclastique dans un plan d'eau peut également générer une vague de tsunami. C'est
-par exemple ce qui s'est produit en 2018 lors de l'éruption de l'Anak Krakatau (Indonésie), une
-éruption si violente que le volcan s'est effondré dans la mer générant ainsi une vague de tsunami
-ayant ravagé plus de 300 km de côtes. L'objectif de ma thèse est de reproduire expérimentalement
-ces phénomènes afin de mieux les comprendre et de prédire éventuellement les dégâts causés par
-une potentielle catastrophe naturelle. </li>
-    
-</section>
-
-
-<!-- Galerie -->
-<section id="galerie">
-    <h2>Galerie</h2>
-    <p>🖼️ Quelques souvenirs de nos activités à venir ici. Bientôt disponible !</p>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>📬 Une question, une idée ou envie de collaborer ?</p>
-    <p>📧 <strong>Email</strong> : <a href="mailto:alcor.asso@gmail.com">alcor.asso@gmail.com</a></p>
-    <p>🏢 <strong>Siège social</strong> : Université Paris-Saclay<br>
-       Bâtiment 625, 1er étage, Bureau 120<br>
-       91405 ORSAY CEDEX</p>
-    <p>🔭 <strong>Lieu d’activité</strong> : Bâtiment Hbar 625, Université Paris-Saclay</p>
-</section>
-
-<!-- Inscription -->
-<section id="inscription">
-    <h2>Inscription</h2>
-    <p>
-        Tu veux nous rejoindre et participer à nos activités d'astronomie ? Rien de plus simple !
-        Clique sur le bouton ci-dessous pour remplir le formulaire d'inscription.
-    </p>
-    <p style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDOPzw3JkKFSFcXYQ8ptt1P8SzUd2noCJFY6M3J5lDYOt9hA/viewform?usp=dialog"
-           class="cta-button" target="_blank" rel="noopener noreferrer">
-            ✍️ S'inscrire à ALCOR
-        </a>
-    </p>
-</section>
-
-<!-- Pied de page -->
-<footer>
-    <p>&copy; 2025 Association ALCOR - Astronomie et Lumières du Campus d'Orsay</p>
-</footer>
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 Association ALCOR - Astronomie et Lumières du Campus d'Orsay</p>
+    </footer>
 
 </body>
+
 </html>
