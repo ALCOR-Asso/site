@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <title>ALCOR - Astronomie et Lumières du Campus d'Orsay</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/ALCOR-Asso/site/main/Logo-32x32.png" type="image/png">
+    <link rel="icon" href="images/Logo-32x32.png" type="image/png">
     <link href="styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Bastien SIEGLER">
+    <meta name="author" content="Bastien SIEGLER & Basile DRIX">
 </head>
 
 <body>
 
     <div class="top-banner">
-        <img src="https://raw.githubusercontent.com/ALCOR-Asso/site/main/banniere-alcor.png"
+        <img src="images/banniere-alcor.png"
             alt="Bannière de l'association ALCOR" />
     </div>
 
@@ -107,9 +107,15 @@
     <section id="galerie">
         <h2>Galerie</h2>
         <div class="img-galerie">
-            <img src="lune.jpg" title="photo empilée de la Lune au c14" />
-            <img src="jupiter.jpg" title="photo empilée de Jupiter au c14" />
-            <img src="cratereLune.jpg" title="photo d'un cratère de la Lune au c14" />
+            <img src="images/1.jpg" title="photo empilée de la Lune au c14" ondblclick="showZoom(1)" />
+            <img src="images/2.jpg" title="photo empilée de Jupiter au c14" ondblclick="showZoom(2)" />
+            <img src="images/3.jpg" title="photo d'un cratère de la Lune au c14" ondblclick="showZoom(3)"/>
+        </div>
+        <br />
+        <div class="img-galerie">
+            <img src="images/4.jpg" title="photo de la tour Eiffel au C8 depuis le ħ" ondblclick="showZoom(4)"/>
+            <img src="images/5.jpg" title="photo du Soleil pris au Coronado pendant le WAO" ondblclick="showZoom(5)"/>
+            <img src="images/6.jpg" title="photo du barbecue du WAO" ondblclick="showZoom(6)"/>
         </div>
         <p>🖼️ Quelques souvenirs de nos activités précédentes. Plus à venir !</p>
     </section>
@@ -144,6 +150,8 @@
     <footer>
         <p>&copy; 2025 Association ALCOR - Astronomie et Lumières du Campus d'Orsay</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

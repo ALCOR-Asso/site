@@ -5,6 +5,28 @@ body {
     margin: 0;
 }
 
+.zoomed_view_div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.zoomed_view_img {
+    width: if(
+        media(aspect-ratio < 1): 100%;
+        else: auto;
+    );
+    height: if(
+        media(aspect-ratio < 1): auto;
+        else: 100%;
+    );
+}
+
 .top-banner {
     width: 100%;
     text-align: center;
